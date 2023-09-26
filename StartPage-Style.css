@@ -1,0 +1,98 @@
+/*Style Sheet for StartPage.html*/
+
+:root {
+    --bar-height: 72px;
+    --color-primary: Maroon;
+    --color-primary-light: darkSalmon;
+}
+  
+body {
+    margin: 0;
+    font-family: "Cambria";
+}
+  
+.header {
+    height: 100vh;
+    background: linear-gradient(
+      to bottom right,
+      var(--color-primary),
+      var(--color-primary-light)
+    );
+    display: flex;
+    align-items: center;
+    padding-top: var(--bar-height);
+    box-sizing: border-box;
+}
+  
+.u-centered {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 16px;
+    box-sizing: border-box;
+}
+  
+.sign-up {
+    max-width: 400px;
+    padding: 32px;
+    box-sizing: border-box;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+}
+  
+.sign-up__title {
+    margin-top: 0;
+}
+  
+.sign-up__description {
+    font-size: 1.2em;
+}
+  
+.sign-up__button {
+    background: #ffffff;
+    outline: none;
+    font: bold 1.1em "Quicksand", sans-serif;
+    color: var(--color-primary);
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+}
+  
+.sign-up__button:hover {
+    background: transparent;
+    color: #ffffff;
+}
+
+.top-bar {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--bar-height);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    transition: background 0.15s;
+}
+  
+.top-bar__bg {
+    background: linear-gradient(to left, #bb0d41, #6f0000);
+}
+.top-bar__content {
+    height: 100%;
+    padding: 5px;
+}
+.top-bar__logo {
+    height: 100%;
+    float: left;
+}
+.main-title
+{
+    text-align: center;
+    height: 100%;
+    margin: 5px;
+    padding: 5px;
+    color: WhiteSmoke
+}

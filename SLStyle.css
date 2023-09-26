@@ -1,0 +1,130 @@
+/*Style-sheet for SignIn.html and Login.html*/
+
+:root {
+    --bar-height: 72px;
+    --color-primary: maroon;
+    --color-primary-light: indianred;
+}
+
+body {
+    margin: 0;
+}
+  
+.u-centered {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.top-bar {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--bar-height);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    transition: background 0.15s;
+}
+  
+.top-bar__bg {
+    background: linear-gradient(to left, #bb0d41, #6f0000);
+}
+.top-bar__content {
+    height: 100%;
+    padding: 5px;
+}
+.top-bar__logo {
+    height: 100%;
+    float: left;
+}
+.main-title
+{
+    text-align: center;
+    height: 100%;
+    margin: 5px;
+    padding: 5px;
+    color: WhiteSmoke
+}
+
+.header {
+    height: 100vh;
+    background: linear-gradient(
+      to bottom right,
+      var(--color-primary),
+      var(--color-primary-light)
+    );
+    display: flex;
+    align-items: center;
+    padding-top: var(--bar-height);
+    padding-left: 100px;
+    padding-right: 100px;
+    box-sizing: border-box;
+}
+h1
+{
+  font-size: 40px;
+  font-family: 'Times New Roman';
+  color: midnightblue;
+  text-align: center;
+}
+td
+{
+  width: 40%;
+}
+.Container
+{
+  padding: 16px;
+  margin: auto;
+  width: 60%;
+}
+.groups
+{
+  padding: 10px;
+  margin: 10px;
+}
+.Container label
+{
+  display: inline-block;
+  font-family: 'Cambria';
+  font-size: 1.5em;
+}
+
+input[type=text], input[type=password], input[type=email]
+{
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]
+{
+  background-color: #191970;
+  border: 2px solid #000000;
+  color: White;
+  padding: 16px 32px;
+  font-size: 18px;
+  font-family: 'Quicksand';
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(255, 23, 62);
+    cursor: pointer;
+}
+.s-in__form, .l-in__form
+{
+    width: 80%;
+    max-width: 700px;
+    border-radius: 16px;
+    background-image: linear-gradient(to top right, gainsboro, Beige);
+    padding: 16px;
+    margin: auto;
+}
